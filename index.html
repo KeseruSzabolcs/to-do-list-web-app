@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <title>To Do List</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+          integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 </head>
 <body>
 
 <div id="content">
+
+    <h1>To DO List</h1>
+
+    <h3>Add new item</h3>
+
+    <form id="create-item-form">
+        <label for="description-field">Description: </label>
+        <input type="text" id="description-field" placeholder="Description">
+
+        <label for="Deadline-field">Deadline: </label>
+        <input type="date" id="description-field">
+
+        <input type="submit" id="submit-form"/>
+    </form>
 
     <table id="to-do-items">
         <thead>
@@ -24,19 +40,25 @@
                 <td>Learn HTML</td>
                 <td>04.11.2019</td>
                 <td><input type="checkbox" class="mark-done" /></td>
-                <td><a href="#" class="delete-item">X</a> </td>
+                <td><a href="#" class="delete-item">
+                        <i class="far fa-trash-alt"></i>
+                    </a> </td>
             </tr>
             <tr>
                 <td>Learn CSS</td>
                 <td>04.11.2019</td>
                 <td><input type="checkbox" class="mark-done" /></td>
-                <td><a href="#" class="delete-item">X</a> </td>
+                <td><a href="#" class="delete-item">
+                        <i class="far fa-trash-alt"></i>
+                    </a> </td>
             </tr>
             <tr>
                 <td>Learn Javascript</td>
                 <td>04.11.2019</td>
                 <td><input type="checkbox" class="mark-done" /></td>
-                <td><a href="#" class="delete-item">X</a> </td>
+                <td><a href="#" class="delete-item">
+                        <i class="far fa-trash-alt"></i>
+                    </a> </td>
             </tr>
         </tbody>
     </table>
